@@ -77,6 +77,28 @@ body {
 }
 
 
+@keyframes flickerAnimation {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-o-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+
+
 .container-chaos {
 	list-style: none;
 	width: 100%;
@@ -320,6 +342,21 @@ line-height: 55px;
 color:black;
 }
 
+.thesis4 .text p {
+
+	padding-bottom: 5%;
+
+}
+
+
+.animate-flicker {
+   -webkit-animation: flickerAnimation 20s infinite;
+   -moz-animation: flickerAnimation 20s infinite;
+   -o-animation: flickerAnimation 20s infinite;
+    animation: flickerAnimation 20s infinite;
+}
+
+
 .thesis2 {
 position: relative;
 padding-top: 60px;
@@ -519,16 +556,13 @@ color:white;
 }
 
 .thesis4 {
-margin-top: 100px;
-padding-top:1800px;
-padding-left: 400px;
-padding-right: 20px;
+padding-top:10%;
 }
 #human {
-padding-top:200px;
 width: 500px;
 position: center;
 float: left;
+padding-bottom: 5%;
 }
 
 p {
